@@ -200,13 +200,13 @@ export default function AuthCover({
 
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-mono text-brand-green mb-6">
               <Bot size={13} />
-              <span>THE LARGEST MANAGED DATA PIPELINE FOR INDIC LLMS</span>
+              <span>THE LARGEST MANAGED DATA PIPELINE FOR GLOBAL LLM ALIGNMENT</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight leading-none max-w-4xl mx-auto">
               SLA-Backed Human Evaluation <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-green to-brand-teal">
-                Built for Indian AI Foundations
+                Built for Global AI Foundations
               </span>
             </h1>
 
@@ -263,8 +263,8 @@ export default function AuthCover({
           {/* Grid Use Cases */}
           <section className="max-w-7xl mx-auto px-4 mt-20">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Our Indic Human-Compute Capability Modules</h2>
-              <p className="text-brand-slate text-sm mt-2">Delivering exact model evaluations with native regional intelligence and high security.</p>
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Our Global Human-Compute Capability Modules</h2>
+              <p className="text-brand-slate text-sm mt-2">Delivering exact model evaluations with native multidialect intelligence and high security.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
