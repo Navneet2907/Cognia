@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Outfit", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Custom Colors for 2UNE mapped specifically to the Elegant Dark Theme */
+  --color-brand-black: #0A0A0A;
+  --color-brand-charcoal: #0F0F0F;
+  --color-brand-light-charcoal: #121212;
+  --color-brand-green: #34d399; /* Emerald 400 for stable states and active items */
+  --color-brand-slate: #9ca3af; /* Gray 400 for readable labels and details */
+  --color-brand-teal: #a78bfa; /* Violet 400 for accents */
+  --color-brand-amber: #6366f1; /* Indigo 500 for premium triggers and solid inputs */
+  --color-brand-red: #fb7185; /* Soft rose red for warnings */
+  --color-brand-success: #10b981; /* Vivid green */
+}
+
+/* Base custom definitions */
+body {
+  background-color: #0A0A0A;
+  color: #f3f4f6; /* Gray 100 */
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Apply sleek display font to all headings automatically */
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display) !important;
+  letter-spacing: -0.02em;
+}
+
+/* Luxury scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08); /* hyper-opaque white divider style */
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1; /* Glowing Indigo index indicator */
+}
+
+@keyframes pulse-green {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4);
+  }
+  50% {
+    opacity: .7;
+    transform: scale(1.08);
+    box-shadow: 0 0 8px 2px rgba(52, 211, 153, 0.2);
+  }
+}
+
+.animate-pulse-green {
+  animation: pulse-green 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Glasscard backgrounds */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
